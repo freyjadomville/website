@@ -1,0 +1,44 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>Hi there!</h1>
+      <p>Welcome to my website. Here's what's currently available:</p>
+      <ul>
+        <li>
+          If you want to know more about me, feel free to read my <a
+            href="/about">About Page</a
+          >
+        </li>
+        <li>
+          If you wish to know what's on my mind, my <a href="/blog">blog</a> is
+          probably the place to go
+        </li>
+        <li>
+          There'll be more here, in time, but for now this is pretty much it. My
+          social media (primarily at my <a
+            href="https://gensoukyou.jp.net/@freyja">Misskey account</a
+          >) may outline some more of my misadventures.
+        </li>
+        <li>
+          Prospective Recruiters - any headhunting requests should go through <a
+            href="https://www.linkedin.com/in/freyja-domville-12779145/"
+            >LinkedIn</a
+          >. I will not respond to unsolicited emails.
+        </li>
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>

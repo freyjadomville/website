@@ -1,0 +1,128 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+---
+
+<header>
+  <nav>
+    <div class="header-left">
+      <h2><a href="/">{SITE_TITLE}</a></h2>
+      <ThemeSwitcher />
+    </div>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+    <div class="social-links">
+      <a href="https://gensoukyou.jp.net/@freyja" target="_blank">
+        <span class="sr-only">Follow Freyja on Misskey/Mastodon</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            d="M8.91 16.892c-1.039.003-1.931-.63-2.352-1.366-.225-.322-.67-.437-.676 0v2.014c0 .81-.292 1.51-.876 2.1-.567.574-1.26.86-2.078.86-.8 0-1.493-.286-2.077-.86A2.928 2.928 0 0 1 0 17.54V6.46c0-.624.176-1.189.526-1.695a2.855 2.855 0 0 1 1.402-1.088 2.846 2.846 0 0 1 1-.177c.902 0 1.653.354 2.253 1.063l2.997 3.515c.067.05.263.437.732.437.47 0 .692-.386.758-.437l2.972-3.515c.618-.709 1.377-1.063 2.278-1.063.334 0 .668.059 1.001.177a2.73 2.73 0 0 1 1.377 1.088c.367.506.55 1.07.55 1.695v11.08c0 .81-.291 1.51-.875 2.1-.568.573-1.26.86-2.078.86-.801 0-1.493-.286-2.078-.86a2.928 2.928 0 0 1-.85-2.1v-2.014c-.05-.55-.531-.204-.702 0-.45.843-1.313 1.361-2.352 1.366ZM21.448 8.61c-.7 0-1.302-.245-1.802-.733-.484-.506-.726-1.113-.726-1.822s.242-1.307.726-1.796a2.444 2.444 0 0 1 1.802-.758c.7 0 1.302.252 1.802.758.5.49.751 1.088.751 1.796 0 .709-.25 1.316-.75 1.822-.501.488-1.102.733-1.803.733Zm.025.507c.7 0 1.293.252 1.777.758.5.506.751 1.113.751 1.822v6.248c0 .709-.25 1.316-.75 1.821a2.404 2.404 0 0 1-1.778.734c-.7 0-1.301-.244-1.802-.734a2.497 2.497 0 0 1-.75-1.82v-6.25a2.5 2.5 0 0 1 .75-1.82 2.444 2.444 0 0 1 1.802-.76Z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://github.com/freyjadomville" target="_blank">
+        <span class="sr-only">Go to Freyja's GitHub repo</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
+          ><path
+            fill="currentColor"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          ></path></svg
+        >
+      </a>
+      <a
+        href="https://www.linkedin.com/in/freyja-domville-12779145/"
+        target="_blank"
+      >
+        <span class="sr-only">Go to Freyja's LinkedIn</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xml:space="preserve"
+          width="32"
+          height="32"
+          viewBox="0 0 455 455"
+        >
+          <path
+            fill="currentColor"
+            d="M246.4 204.35v-.665c-.136.223-.324.446-.442.665h.442z"
+            style="fill-rule:evenodd;clip-rule:evenodd"></path>
+          <path
+            fill="currentColor"
+            d="M0 0v455h455V0H0zm141.522 378.002H74.016V174.906h67.506v203.096zm-33.753-230.816h-.446C84.678 147.186 70 131.585 70 112.085c0-19.928 15.107-35.087 38.211-35.087 23.109 0 37.31 15.159 37.752 35.087 0 19.5-14.643 35.101-38.194 35.101zM385 378.002h-67.524V269.345c0-27.291-9.756-45.92-34.195-45.92-18.664 0-29.755 12.543-34.641 24.693-1.776 4.34-2.24 10.373-2.24 16.459v113.426h-67.537s.905-184.043 0-203.096H246.4v28.779c8.973-13.807 24.986-33.547 60.856-33.547 44.437 0 77.744 29.02 77.744 91.398v116.465z"
+            style="fill-rule:evenodd;clip-rule:evenodd"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    margin: 0;
+    padding: 0 1em;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    border-block-end: var(--header-border);
+  }
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  @media (max-width: 720px) {
+    .header-left {
+      width: 100%;
+      max-width: 250px;
+      justify-content: space-around;
+    }
+    nav {
+      padding-block-start: 1rem;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .social-links {
+      display: none;
+    }
+  }
+</style>

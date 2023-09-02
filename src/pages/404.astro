@@ -1,0 +1,26 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>Ooops!</h1>
+      <p>
+        That page appears not to exist. If you think this is an error on my
+        part, feel free to contact me on my <a
+          href="https://gensoukyou.jp.net/@freyja">Misskey</a
+        >
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
