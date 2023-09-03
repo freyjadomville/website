@@ -6,6 +6,8 @@ heroImage: '/browser-message.png'
 heroAlt: 'A screenshot detailling the footer of my website, in light mode, showing the unsupported browser messages in Microsoft Edge IE Mode'
 ---
 
+> Note: The image you can see on this page and on the blog post list is not the actual message/warning - it'll appear in the footer if things are actually unsupported!
+
 Old browsers. Don't we love them? (sarcasm)
 
 It's often the case these days that if you try to browse the web using Internet Explorer on some older version of Windows or an old Safari version that's tied to an old version of Mac OS, you'll get a messed up web page and a helpful little message that your browser isn't supported for one reason or another. They've been around forever, as a nag to the end user, and as part of a a last gasp effort that allows a developer to hope that the end of one more accursed old browser version is just around the corner.
