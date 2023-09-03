@@ -6,7 +6,7 @@ heroImage: '/browser-message.png'
 heroAlt: 'A screenshot detailling the footer of my website, in light mode, showing the unsupported browser messages in Microsoft Edge IE Mode'
 ---
 
-> Note: The image you can see on this page and on the blog post list is not the actual message/warning - it'll appear in the footer if things are actually unsupported!
+> Note: The image you can see on this page and on the blog post list is not the actual message/warning - it'll appear in the footer if things are actually unsupported! If you want to, though, you could always donate to your local [trans charity](https://mermaidsuk.org.uk/).
 
 Old browsers. Don't we love them? (sarcasm)
 
@@ -30,7 +30,7 @@ That means that, assuming you're careful, I'd like to argue that feature detecti
     * The only snag here might be Windows 10 or below, which doesn't support TLS 1.3 on IE web views out of the box, but it can be enabled via `regedit` in most cases.
     * I'm reccommending it because simplifies the cases for IE < 11, and means you don't have to write ES3 in your browser detection code.
     * If you can't get away with this, consider reverse engineering the implementation I wrote in 2020 for [Historic England](https://historicengland.org.uk/) which also uses this approach.
-2) Try to find the newest feature you can for the standard you want to support 
+2) Try to find the newest feature you can for the standard you want to support
      * In my case, I used ES 2020 for this blog site, as it's the [default for Vite](https://vitejs.dev/config/build-options.html#build-target), so ended up with nullish coalescing as the detection point, as per the bottom of this [caniuse page](https://caniuse.com/?feats=mdn-javascript_operators_optional_chaining,mdn-javascript_operators_nullish_coalescing,mdn-javascript_builtins_globalthis,es6-module-dynamic-import,bigint,mdn-javascript_builtins_promise_allsettled,mdn-javascript_builtins_string_matchall,mdn-javascript_statements_export_namespace,mdn-javascript_operators_import_meta).
 3) Find detection tools for any CSS features that break your site
     * In my case I had to check in a slightly more roundabout way that tested if `display: flex; gap: 20px;` was supported, because it breaks spacing in some browsers when viewing stuff in more limited viewports
