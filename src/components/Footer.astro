@@ -1,9 +1,11 @@
 ---
+import UnsupportedBrowserMessage from "./UnsupportedBrowserMessage.astro";
 const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} Freyja Domville. All rights reserved.
+  <UnsupportedBrowserMessage />
+   &copy; {today.getFullYear()} Freyja Domville. All rights reserved.
   <div class="social-links">
     <a href="https://gensoukyou.jp/net/@freyja" target="_blank">
       <span class="sr-only">Follow Freyja on Misskey/Mastodon</span>

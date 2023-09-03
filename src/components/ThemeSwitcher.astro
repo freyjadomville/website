@@ -70,7 +70,7 @@ localStorage.setItem(
   "theme",
   theme !== null && theme !== void 0 ? theme : "light"
 );
-const handleToggleClick = () => {
+const handleToggleClick = function () {
   const element = document.documentElement;
   element.classList.toggle("dark");
   const isDark = element.classList.contains("dark");
