@@ -79,7 +79,7 @@ With the two functions defined in place, and applying classes to the relevant me
 
 ## Consider "bundling" your inline scripts regardless
 
-An approach I find useful for this sort of work is to write the ESNext version, as if it's a module script, then use the [TypeScript playground](https://www.typescriptlang.org/play) to give you the version that supports a particular ES standard (possibly even ES5). As long as you choose your method calls carefully, you can get away with writing these scripts in more modern syntax, but without causing old browser issues for your static content that doesn't strictly need JavaScript, especially when it comes to streaming HTML down the wire. The downside is that maintaining these scripts outside of any sort of bundling can get tricky, but the upside is that you get the compatibility you want, for essntially free, if your process is well documented.
+An approach I find useful for this sort of work is to write the ESNext version, as if it's a module script, then use the [TypeScript playground](https://www.typescriptlang.org/play) to give you the version that supports a particular ES standard (possibly even ES5 in the unsupported modal case). As long as you choose your method calls carefully, you can get away with writing these scripts in more modern syntax, but without causing old browser issues for your static content that doesn't strictly need JavaScript, especially when it comes to streaming HTML down the wire. The downside is that maintaining these scripts outside of any sort of bundling can get tricky, but the upside is that you get the compatibility you want, for essntially free, if your process is well documented.
 
 ## Wait, why are we using `Function` for the nullish coalescing check?
 
