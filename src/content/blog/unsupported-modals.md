@@ -33,7 +33,7 @@ That means that, assuming you're careful, I'd like to argue that feature detecti
 3) Find detection tools for any CSS features that break your site
     * In my case I had to check in a slightly more roundabout way that tested if `display: flex; gap: 20px;` was supported, because it breaks spacing in some browsers when viewing stuff in more limited viewports
 
-Once you have the ingredients, it's relatively straightforward to construct a polyfill that works in most cases. For the nullish coalescing and flex gap in this example (via Astro's `is:inline` in this specific example, but, but this is merely supposed to be an inline script):
+Once you have the ingredients, it's relatively straightforward to construct a polyfill that works in most cases. For the nullish coalescing and flex gap in this example (via Astro's `is:inline` in this specific example, but this is merely supposed to be an inline script):
 
 ```html
 <script is:inline>
