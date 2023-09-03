@@ -83,11 +83,11 @@ An approach I find useful for this sort of work is to write the ESNext version, 
 
 ## Wait, why are we using `Function` for the nullish coalescing check?
 
-Simply put, `eval`` is not secure of those kinds of syntaxes. If the browser doesn't compile the feature, then the feautre isn't supported. It's quite nice as a shortcut for ertain things, and if you can be certain of a superset, you minimise the number of browser bugs that need to be accounted for.
+Simply put, `eval` is not secure. If the browser doesn't compile the feature (through `Function`), then the feature isn't supported. It's quite nice as a shortcut for certain things, and if you can be certain of a superset, you minimise the number of browser checks that need to be accounted for.
 
 ## Why the parens in the comment above about `CSS.supports`?
 
-Edge legacy versioning issues, plus a couple of older browsers, require the parentheses, even if they are otherwise optional. Otheriwse, it works just fine for most things, Flexbox gap is just a bit trickier to think about.
+Edge legacy versioning issues, plus a couple of other older browsers, require the parentheses, even if they are otherwise optional. Otheriwse, it works just fine for most things, Flexbox gap is just a bit trickier to think about.
 
 ## Comments TBD
 
