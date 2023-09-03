@@ -1,11 +1,17 @@
 <div class="unsupported-message">
   <span
     >This site works best with browsers that support <a
-      href="https://caniuse.com/?feats=mdn-javascript_operators_optional_chaining,mdn-javascript_operators_nullish_coalescing,mdn-javascript_builtins_globalthis,es6-module-dynamic-import,bigint,mdn-javascript_builtins_promise_allsettled,mdn-javascript_builtins_string_matchall,mdn-javascript_statements_export_namespace,mdn-javascript_operators_import_meta"
+      href="https://kangax.github.io/compat-table/es2016plus/"
       >ES2020 or newer.</a
-    >. I test with the latest versions of Firefox, Chrome, and Edge, and will
-    accept issues for Safari 14+ if you are willing to test them for me (as I do
-    not own have any modern Apple devices).</span
+    ></span
+  >
+</div>
+<div class="flex-gap-warning">
+  <span id="flex-gap-warning"
+    >This site looks best with browsers that support <a
+      href="https://caniuse.com/mdn-css_properties_gap_flex_context"
+      >gap with flexbox</a
+    >, and your browser does not currently support this.</span
   >
 </div>
 <script is:inline>
@@ -18,8 +24,30 @@ function browserSupported() {
   }
 }
 
+function checkFlexGap() {
+  // create flex container with row-gap set
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
+
+  // create two, elements inside it
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  // append to the DOM (needed to obtain scrollHeight)
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
+  flex.parentNode.removeChild(flex);
+
+  return isSupported;
+}
+
 if (!browserSupported()) {
   document.documentElement.classList.add("unsupported");
+}
+if (!checkFlexGap()) {
+  document.documentElement.classList.add("no-flex-gap");
 }
 </script>
 
@@ -31,4 +59,14 @@ if (!browserSupported()) {
   :global(.unsupported) .unsupported-message {
     display: block;
   }
+
+  .flex-gap-warning {
+    display: none;
+  }
+
+  :global(.no-flex-gap) .flex-gap-warning {
+    display: block;
+  }
+
+  @supports;
 </style>
