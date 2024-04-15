@@ -18,7 +18,7 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body class="dark:bg-slate-800 text-white">
     <Header />
-    <main class="container mx-auto">
+    <main class="container mx-auto p-4">
       <section>
         <ul class="flex flex-wrap gap-8 m-0 p-0">
           {
@@ -27,7 +27,7 @@ const posts = (await getCollection("blog")).sort(
                 return b.data.pubDate.getTime() - a.data.pubDate.getTime();
               })
               .map((post) => (
-                <li class="group w-[calc(50%-1rem)] first:w-full first:my-6 first:text-center [&>*]:duration-200 [&>*]:transition [&>*]:ease-linear">
+                <li class="group sm:w-[calc(50%-1rem)] first:w-full first:my-6 first:text-center [&>*]:duration-200 [&>*]:transition [&>*]:ease-linear">
                   <a
                     class="flex flex-col items-center"
                     href={`/blog/${post.slug}/`}
