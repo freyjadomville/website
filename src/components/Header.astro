@@ -1,21 +1,21 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
-import ThemeSwitcher from "./ThemeSwitcher.astro";
 ---
 
-<header>
-  <nav>
-    <div class="header-left">
-      <h2><a href="/">{SITE_TITLE}</a></h2>
-      <ThemeSwitcher />
+<header class="border-b-2 dark:text-white">
+  <nav class="flex justify-around">
+    <div class="flex">
+      <h2 class="p-4"><a href="/">{SITE_TITLE}</a></h2>
     </div>
-    <div class="internal-links">
+    <div
+      class="flex [&>a]:pt-4 gap-4 [&>a[data-active]]:border-solid [&>a[data-active]]:border-b-4 [&>a[data-active]]:border-blue-400"
+    >
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
     </div>
-    <div class="social-links">
+    <div class="flex justify-between p-4 gap-4">
       <a href="https://gensoukyou.jp.net/@freyja" target="_blank">
         <span class="sr-only">Follow Freyja on Misskey/Mastodon</span>
         <svg
@@ -65,64 +65,3 @@ import ThemeSwitcher from "./ThemeSwitcher.astro";
     </div>
   </nav>
 </header>
-
-<style>
-  header {
-    margin: 0;
-    padding: 0 1em;
-    background: var(--white);
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
-    border-block-end: var(--header-border);
-  }
-  h2 {
-    margin: 0;
-    font-size: 1em;
-  }
-
-  h2 a,
-  h2 a.active {
-    text-decoration: none;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
-  }
-  nav a.active {
-    text-decoration: none;
-    border-bottom-color: var(--accent);
-  }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-
-  .header-left {
-    display: flex;
-    flex-direction: row;
-    gap: 0.25rem;
-  }
-
-  @media (max-width: 720px) {
-    .header-left {
-      width: 100%;
-      max-width: 250px;
-      justify-content: space-around;
-    }
-    nav {
-      padding-block-start: 1rem;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    .social-links {
-      display: none;
-    }
-  }
-</style>

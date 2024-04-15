@@ -10,9 +10,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body class="dark:bg-slate-800">
     <Header title={SITE_TITLE} />
-    <main>
+    <main class="container mx-auto prose dark:prose-invert py-10">
       <h1>Hi there!</h1>
       <p>Welcome to my website. Here's what's currently available:</p>
       <ul>
@@ -22,8 +22,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           >
         </li>
         <li>
-          If you wish to know what's on my mind, my <a href="/blog">blog</a> is
-          probably the place to go
+          If you wish to know what's on my mind, my <a href="/blog">blog</a> is probably
+          the place to go
         </li>
         <li>
           There'll be more here, in time, but for now this is pretty much it. My

@@ -1,7 +1,7 @@
 ---
 title: 'Unsupported Browser Modals Should Not Be Done Via Browser Agent Strings in 2023'
 description: 'A summary of why feature detection is viable (and easier!) than using an agent string library'
-pubDate: 'Sep 03 2023'
+pubDate: '3 Sep 2023'
 heroImage: '/browser-message.png'
 heroAlt: 'A screenshot detailling the footer of my website, in light mode, showing the unsupported browser messages in Microsoft Edge IE Mode'
 ---

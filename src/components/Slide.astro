@@ -1,0 +1,15 @@
+---
+export interface Props {
+  centered?: boolean;
+}
+
+const { centered } = Astro.props;
+---
+
+<section
+  data-presentation-slide
+  class:list={[centered && "justify-center", centered && "align-center"]}
+  class="mt-20 border-solid border border-[--black] p-20"
+>
+  <slot />
+</section>
