@@ -3,7 +3,7 @@ title: 'Talk Archive: The Unreasonable Effectiveness of the Scientific Method'
 description: 'A talk I gave at Oxford Geek Night on 17th April (slides included as images in the post, video recording to come)'
 pubDate: 'Apr 17 2024'
 heroImage: 'https://upload.wikimedia.org/wikipedia/commons/8/82/The_Scientific_Method.svg'
-heroAlt: 'Wikimedia Image detailling the process of the ceintific method. Licence: Creative Commons Attribution-Share Alike 4.0 International license. '
+heroAlt: 'Wikimedia Image detailling the process of the sceintific method. Licence: Creative Commons Attribution-Share Alike 4.0 International license. '
 ---
 
 import Presentation from '../../components/Presentation.astro'
@@ -12,331 +12,264 @@ import Slide from '../../components/Slide.astro'
 <Presentation />
 
 <Slide>
-
 ## The Unreasonable Effectiveness of the Scientific Method
 
-Freyja Domville \
+Freyja Domville (she/they) \
 Misskey/Mastodon: [@freyja@gensoukyou.jp.net](https://gensoukyou.jp.net/@freyja) \
 Blog: [https://freyjadomville.co.uk](https://freyjadomville.co.uk)
-
 </Slide>
 
-<Slide>
+Hi, I'm Freyja, these are the places you can reach me at to see what I'm up to or how I'm doing. My pronouns are she/they, and if anyone's up for helping my partner find a job as a junior software dev in Oxford or along the west coast mainline between Bristol and Reading, then please feel free to reach out and get in contact. I'll provide more details in the mini-pitch section.
 
+<Slide>
 ## This is a diatribe
 
 Personal opinions/thought processes lie herein
-
 </Slide>
-<Slide>
 
+I'm speaking here from personal experience and perspective, shaped by both my upbringing and the paths I've taken during my career. I'm not trying to sell you anything, just openly sharing a philosophy others might want to use in their own work and life.
+
+<Slide>
 ## Why is this diatribe worth listening to?
 
 * I have a decade in software development, in teams both large and small 🔟
 * My specialisms are in accessibility, UX and performance engineering ⏩♿
 * Good communication can (from experience) reduce employee burnout ☠️
-
 </Slide>
-<Slide>
 
+Cliff notes, I think it helps with the above. Burnout in particular is much more manageable when you can take a step back and make small changes. I've got a decade in software development, I have had a varied amount of experience in both performance and user experience work, alongside some accessibility specialisms!
+
+<Slide>
 ## What is the Scientific Method?
-
 </Slide>
-<Slide>
 
+So, what is the Scientific Method, and how can it help you?
+
+<Slide>
 ## 👀 Make an observation
 
 This is an initial set of measurements to provide a summary of the status quo.
-
 </Slide>
+
+First, you've got to think of something you want to fix, or find out. Make an initial set of observations, replicate/reproduce an issue, and so on.
+
 <Slide>
 ## 🤔 Form a hypothesis
 
 Begin to reason about what might need to change
-
 </Slide>
-<Slide>
 
+Once you've collected that data, you can make a hypothesis about what is or isn't wrong, and how you'd go about verifying the fix, be that tests if it's a "heisenbug", or if you think you can make a change that'd reliably fix an issue.
+
+<Slide>
 ## 👩🏼‍🔬 Make a change
 
 to allow for testing the hypothesis
-
 </Slide>
-<Slide>
 
+As it says, make the change, land it in a local or test environment for further review, production or otheriwse. Yes, I said production - we don't judge when IT doesn't give you a duplicate copy of live to run performance tests on.
+
+<Slide>
 ## 📔 Conduct an experiment
 
 Re-run the measurements from the first step, to replicate behaviours
-
 </Slide>
-<Slide>
 
+Once you've made the change, make sure it affects your tests, or what have you. Replication is important!
+
+<Slide>
 ## 🧮 Analyze the results
 
 Did you actually answer the question?
 Is there a measurable difference?
-
 </Slide>
-<Slide>
 
-## 🔁 Repeat as needed
+Now for analysis! Are you done? Did your load tests give you the results you hoped for? What does the extra info look like?
+
+<Slide>
+## 🔁🦆 Repeat as needed 
 
 Often it's useful to iterate on smaller sets of experiments to reach a goal in the longer term
-
 </Slide>
-<Slide>
 
+Finally, repeat as needed, until you're happy. Remember, the scientific method encourages the use of adorable baby steps. You don't have to do everything at once. If you have a question, stop, think if you need more info, and ask your friendly product owner, rubber duck, or debugger, as appropriate.
+
+<Slide>
 ## "Freyja, why are you telling us this?"
 
 💬 An imaginary audience member for dramatic effect, 2024
-
 </Slide>
-<Slide>
 
+<Slide>
 ## Because this is secretly about understanding the needs of people!  🤸🏻
-
 </Slide>
-<Slide>
 
+<Slide>
 ## Well... it's really about understanding systems in general... 📈
 
 but people most importantly! 🤸🏻
-
 </Slide>
-<Slide>
 
+<Slide>
 ## "You don't have to be an engineer to be a racing driver, but you do have to have *Mechanical Sympathy*."
 
 💬 Jackie Stewart, according to [Martin Thompson's GOTO Aarhaus 2012 talk on the concept](https://www.youtube.com/watch?v=MC1EKLQ2Wmg)
-
 </Slide>
-<Slide>
 
+As famous racing driver reportedly said, "You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy." The citation I have is a secondary one because I can't verify it, but the point still stands. In short, the more you know about a system, the easier it is to maintain, and the better a team can work on fixing and improving things.
+
+<Slide>
 ## What is Mechanical Sympathy? 🦾
 
 A philosophy of understanding how a system works to get the most out of the system's utility
-
 </Slide>
-<Slide>
 
+The important point being that it gives you the options and data you need to give insights on where to focus next, without solely being at the whims of a C-Level executive suite. If you don't have insights into how things are functioning, how can you know if what you're doing is appropriate?
+
+<Slide>
 ## Why is Mechanical Sympathy useful in software? 🖥️
 
 * It gives you an understanding on where more complex issues may be
 * It gives you focus on where to improve if required to
 * It provides a mechanism through which an architecture can scale to *everybody's* needs.
-
 </Slide>
-<Slide>
 
+The elements which Mechanical Sympathy covers is typically on the infrastructure side. Things like race conditions, performance statistics like tail latencies, and other information, comes together to give you an assessment on how many minites to midnight your system has before catastrophe or some other issue reduces user retention.
+
+<Slide>
 ## The Scientific Method helps with obtaining Mechanical Sympathy!
-
 </Slide>
-<Slide>
 
+So how do we obtain this dream of nkowing more about our systems? Hint, it's in the title.
+
+<Slide>
 ## It helps the Developer Experience
 
 * Debug software more effectively by experimenting with different conditions
 * Projects can make better scheduling decisions with a consistent framing
 * Less change of feeling overwhelmed by a large task
-
 </Slide>
-<Slide>
 
+First and foremost, having tickets broken down into smaller tasks, through splitting tickets, stacked merge requests, etc., allows for an even finer grained level of velocity than sprints might get you. Gaining a feel for this also makes the path forward with something involved much simpler, especially as knowledge is shared between the team, which then leads on to happier and more productive people.
+
+<Slide>
 ## It helps the User Experience
 
 * Systems of the future will need to come to where the user is.
 * User feedback can be an input into the process of what to do next
 * Performance engineering can become an effective part of the accessibility equation
-
 </Slide>
-<Slide>
 
-## Aside: Evaluate your device testing as part of this
+But there's a user benefit, too. The systems of the future are becoming more and more user-centric as services improve, and as companies try and grasp on to the next big thing when it comes to automation. That makes a good user experience, and a fast site, part of the equation when it comes to accessible systems. Ity's not just about the ARIA, an easy to use system is also easy to used for someone without an additional need.
+
+<Slide>
+## 💡Takeaway I: The most important time to save in *any* process or system is *people's* time
+
+* This factors into UX, DX, processes around sprints, project delays, the works.
+* There is no free lunch
+* If you're slow/complicated/inaccessible, users will go elsewhere (or build it themselves)
+</Slide>
+
+To summarise that first little bit, the lines are blurring between user's needs and how effective systems are at being effective. Especially as we lean into the realm of chat-bots and GPT, it becomes crucial to navigate through this with a mind on performance and good user discoverability for a particular task.
+
+<Slide>
+## Action: Evaluate your device testing as part of this
 
 * Example: 75th percentiles ⏲️
   * Mobile: Samsung A51 (or a Galaxy S7/8 - ish)
   * Desktop: 2 core 4 thread Skylake/Bulldozer, spinning HDDs!
 
 [Source: The Performance Inequality Gap, 2024](https://infrequently.org/2024/01/performance-inequality-gap-2024/)
-
 </Slide>
+
+This brings me neatly on to a quick aside. Most of the front-end engineers in the room will have seen this, but it's worth drawing attention to again - the devices we should be testing are not solely the iPhone and the latest Android devices. If you're not testing with devices that are 5-6 years old, you are losing over 95% of your market. 
+
 <Slide>
-
-## 💡Takeaway I: The most important time to save in *any* process or system is *people's* time
-
-* This factors into UX, DX, processes around sprints, project delays, the works.
-* There is no free lunch
-* If you're slow/complicated/inaccessible, users will go elsewhere (or build it themselves)
-
-</Slide>
-<Slide>
-
 ## So... why not *"Biological Sympathy"* as well? 💪🏼
 
 * People are just as much a part of these systems as the tech we're building
 * Effective products are effective *because* they understand the needs of the people involved
-
 </Slide>
+
+I do think that Mechanical Synpathy, whilst useful, does have another side to it. The users of our systems are humans, and always will be when it comes to the end result, even if ther'es an automated search process in the middle. At the end of the day, they matter, both as a control for a system in operation, and also as a person that will ultimately consume information in new ways.
+
 <Slide>
-
-## The Scientific method makes development more *sustainable*
-
-* Small, frequent experiments helps with scheduling tasks effectively
-* Updating has the potential to be *proactive* instead of *reactive*
-* A problem can *almost always* be broken down to be smaller smaller
-* Easier for someone to be onboarded into a project quickly and effectively.
-
+## A personal anecdote...
+* Diagnosed with a developmental co-ordination disorder
+* Growing up I always was determined to try something different if something didn't work the first time.
+* Technology has sheped me, and it'll shape future generations even more.
 </Slide>
+
+When I was younger, I was starved of oxygen to the brain. The technologies that arose from the 1990's onwards have shaped the world I grew up in - allowed me to type my exams from the age of 15, and allowed me the path to succeed in a career I have today. They helped me in trying something different, seeing things from another perspective, not always reaching for the common answer.
+
 <Slide>
-
-## Relevant Case Study: CVE-2024-3094 - `xz-utils`
-
-* `xz-utils` was targeted via social engineering because it is a core project of Linux deployments maintained by one person.
-* This led to a vulnerability being constructed on a specifically patched version of OpenSSH used by Debian/Red Hat distros.
-* Fundamentally, the initial step is a *process* vulnerability.
-
+## Takeaway II: The key here is to let people *play*
+* User feedback will be the number one most effective form of feedback any system can have
+* Quite common that even the UX engineer won't necessrily know how a UI performs in the wild.
+* There's always something new to learn under the covers.
 </Slide>
+
+This talk was inspired by a guy who was fresh out of a coding camp, asking for insights on what to focus on as he made the trnasition into industry. And honestly my main peice of advice is this: Play. Rediscover your inner child when thinking about problems. Take some time to reverse engineer a codebase you might not be familiar with, to see how it ticks. And also encourage others to engage in that play. User focus groups are *vital* to getting hands on experience. You don't truly understand the power of accessibility until you see how a user with visual difficulties uses a screen reader. Give them the tools to work on something properly, and their information processing skills are often faster than those of you depending on your eyes. It'll seriosuly make you think twice about messing with focus order. I'm just dipping my toes into the realities of video editing, to preserve my talks, and man, it's a whole new world. I'm excited, and possibly a little intimidated. My plan is to hold on to that where I can, and push myself. That's really what the Method is all about.
+
 <Slide>
-
-## This is not the first time this has happened
-
-* I don't have time to go into more details
-  * [Sam James (`meson` maintainer) has a good summary if you want more information](https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27)
-* Heartbleed, in particular, did get short-term funding, but it didn't last.
-* Long term solutions are needed, and they have to involve everyone as a community
-
+## Opinion: The number one skill that most ineffective devs lack is having the tools to debug.
+* An unsquashed version control hstory, `git bisect`, and a good use of a debugger will increase effectiveness.
+* Most junior devs aren't taught debugging as a dedicated skill in education, and I think the industry suffers for it
+* also learn good engineering practicke - keep notes!
+  * Reccommendation: [Obsidian](https://obsidian.md/).
 </Slide>
+
+Before we finish, I think there are a couple of actions that the industry could take as a while to benefit those who are learning and are new to this industry, or how the technical side of things truly works. Developers who have an understanding of their tooling are able to get more insight into how things work, or go "dumpster diving", like me, to find those _really_ persnickety problems. Whenever I see something going on, my racoon-like mind is always scavenging for more info on a particular problem. But here's the rub - graduates are only really taught the basics in most academic environemnts, meaning that there's still a lot here that could be done. 
+
 <Slide>
-
-## My Opinion: The industry's most pressing question is...
-
+## Opinion: Designers could hugely benefit from learning some basic HTML and CSS
+* The current model of responsiveness based on width is outdated
+* Developers need to step up and provide the tools to give container queries and similar tools as options to a designer.
+* if you've not got a masterclass culture, then feel free to get in touch with me afterwards.
 </Slide>
+
+There's another aspect to this though. I think that a set of controlled experiments, with examples that are well documented, demonstrated with hands on pairings between designer and developer, can impart knowledge that can be used to more elaborately cater for a multi-screen world, and provide a flexibility I think the industry is only just catching up with. 
+
 <Slide>
-
-## 💡Takeaway II: "What can we do to make development practices more rigorous *and sustainable*?"
-
-* Hint: I think a collective culture of learning from our past mistakes sounds pretty sciency!
-
+## Opinion: Self-dev time is good, but...
+* ...it's worth thinking about how one discipline can help another.
 </Slide>
+Everybody being siloed means people don't share in the things others may benefit from. See a cool library? Share it! see a good write-up? Share that too. And also think about setting up a forum or masterclass structure in your organisation to talk about these things. Having spent the last 18 months at 67 Bricks, where I work, it's been a wonderful breath of fresh air to learn about both the industry and potentially something new in terms of technology or design.
+
 <Slide>
-
-## Answering questions on sustainable systems development is hard
-
-* How do you get C-Level execs on board with this philosophy in the long term?
-* Where could the industry improve?
-* Who's being let down?
-
+## All of this might seem overwhelming...
+* It's worth making sure you've got a decent engineering project manager type role to help with client feedback
+* Think about how to write software sustainably (more on my blog, also published with the slides!)
 </Slide>
+
+And if it all gets too much, make sure you've got someone to orchestrate and prioritise what experiments take place. The worst thing to have in a team is burnout. Sustainable software development practices are essential, and whilst I couldn't fit that in *this talk*, my blog has [a follow up piece of prose](./thoughts-on-development-sustainability.mdx) about that in the context of the recent `xz-utils` vulnerability, that'd I'd be happy to come back at a future date and speak about in person.
+
 <Slide>
-
-## A few partial answers/suggestions
-
-* Consider supporting maintainers of projects you depend on
-* Internal Developers: If they look to be burned out, do they need a judgement-free space (sabbaticals - ideally paid!) to recover?
-* Are your clients/marketing contributing to crunch due to indecision or otherwise?
-* Is your user feedback sufficient enough for you to be confident you're going in the right direction?
-
+## In short: The Scientific Method is a tool and philosophy that helps me think about my processes on a daily basis...
 </Slide>
+
 <Slide>
-
-## Social engineering issues need to be solved in the long-term
-
-* We already have security teams looking at the technical stuff
-* This is a financial and mental health support problem, fundamentally
-* I've used this structure of problems to improve my own mental health regarding my work
-* A scaled up, industry-wide approach could work well.
-
-</Slide>
-<Slide>
-
-## Symptoms/Vulnerability precursors
-
-* Maintainer burnout - it sucks, it's all too common, and I have a huge amount of respect for Lasse Collin.
-* Processes where companies pressuring individuals being the norm
-* The industry turning a blind eye to the funding gap between salaried employees and full-time FOSS devs.
-
-</Slide>
-<Slide>
-
-## Hypothesis: Lack of support led to the trust of a malicious actor
-
-* Evidence: Attacker has been contributing and actively helping since 2021...
-* No other financial or personnel support
-* Maintainer is potentially vulnerable to parties attacking their mental health
-
-</Slide>
-<Slide>
-
-## Collective Experiment proposal: Support the libraries you use
-
-* Ask them how you can help contribute, especially if they're a small team
-* Target your donations based on that team's needs
-* If something is high priority to fix, pay them adequately and don't crunch them.
-
-</Slide>
-<Slide>
-
-## Aside: Employment
-
-* Might seem simple, but
-  * Can backfire if the dev in question is prevented from working on the project during company time
-  * Often better to try and make a regular donation so they can go part time versus other work.
-
-</Slide>
-<Slide>
-
-## Culture experiment: Evaluate your self-development culture
-
-* Web Designers: Learn some HTML/CSS!
-* Devs: Evaluate yourself against the next level's job spec.
-* Project managers: Consider attending user feedback sessions
-* Dev Leads: Consider how to delegate the role of Engineering Project Manager
-
-</Slide>
-<Slide>
-
-## Everyone: Think like a scientist - Take notes
-
-* I use Obsidian
-  * Great Markdown features
-  * Free for personal use
-* Other methods might work also (hand written notes in particular)
-* The more knowledge obtained, the more society benefits
-
-</Slide>
-<Slide>
-
-## 💡Takeaway III: The best teams learn from one another, other teams, as a well as their users
-
-</Slide>
-<Slide>
-
-## In short: The Scientific Method is a tool and philosophy that helps people think about their processes on a daily basis...
-
-</Slide>
-<Slide>
-
 ## It helps with learning new things, and forming new ideas...
-
 </Slide>
-<Slide>
 
+
+<Slide>
 ## It serves me well, and I hope it serves you all well too!
-
 </Slide>
-<Slide>
 
+<Slide>
 ## I'm looking forward to your own conclusions - keep me posted of your progress
 
-Misskey/Mastodon: [@freyja@gensoukyou.jp.net](https://gensoukyou.jp.net/@freyja)
-Blog: [https://freyjadomville.co.uk](https://freyjadomville.co.uk) (working on comments being linked to my Misskey)
-
+Freyja Domville (she/they) \
+Misskey/Mastodon: [@freyja@gensoukyou.jp.net](https://gensoukyou.jp.net/@freyja) \
+Blog: [https://freyjadomville.co.uk](https://freyjadomville.co.uk) (working on comments being linked to my Misskey)\
 </Slide>
+
 <Slide>
+## Thanks for listening! I will not be taking questions. 👋🏼
 
-## Thanks for listening! 👋🏼
-
-* YouTube version is coming soon! 
-* Link to the [blog post](https://freyjadomville.co.uk/blog/the-unreasonable-effectiveness-of-the-scientific-method/) or subscribe to my Misskey for slides
+* YouTube version is coming soon (it'll be embedded on the blog post once recorded)! 
+* Look at the blog post or subscribe to my Misskey for slide copies and speaker notes
+</Slide>
 
 </Slide>
