@@ -1,0 +1,342 @@
+---
+title: 'Talk Archive: The Unreasonable Effectiveness of the Scientific Method'
+description: 'A talk I gave at Oxford Geek Night on 17th April (slides included as images in the post, video recording to come)'
+pubDate: 'Apr 17 2024'
+heroImage: 'https://upload.wikimedia.org/wikipedia/commons/8/82/The_Scientific_Method.svg'
+heroAlt: 'Wikimedia Image detailling the process of the ceintific method. Licence: Creative Commons Attribution-Share Alike 4.0 International license. '
+---
+
+import Presentation from '../../components/Presentation.astro'
+import Slide from '../../components/Slide.astro'
+
+<Presentation />
+
+<Slide>
+
+## The Unreasonable Effectiveness of the Scientific Method
+
+Freyja Domville \
+Misskey/Mastodon: [@freyja@gensoukyou.jp.net](https://gensoukyou.jp.net/@freyja) \
+Blog: [https://freyjadomville.co.uk](https://freyjadomville.co.uk)
+
+</Slide>
+
+<Slide>
+
+## This is a diatribe
+
+Personal opinions/thought processes lie herein
+
+</Slide>
+<Slide>
+
+## Why is this diatribe worth listening to?
+
+* I have a decade in software development, in teams both large and small 🔟
+* My specialisms are in accessibility, UX and performance engineering ⏩♿
+* Good communication can (from experience) reduce employee burnout ☠️
+
+</Slide>
+<Slide>
+
+## What is the Scientific Method?
+
+</Slide>
+<Slide>
+
+## 👀 Make an observation
+
+This is an initial set of measurements to provide a summary of the status quo.
+
+</Slide>
+<Slide>
+## 🤔 Form a hypothesis
+
+Begin to reason about what might need to change
+
+</Slide>
+<Slide>
+
+## 👩🏼‍🔬 Make a change
+
+to allow for testing the hypothesis
+
+</Slide>
+<Slide>
+
+## 📔 Conduct an experiment
+
+Re-run the measurements from the first step, to replicate behaviours
+
+</Slide>
+<Slide>
+
+## 🧮 Analyze the results
+
+Did you actually answer the question?
+Is there a measurable difference?
+
+</Slide>
+<Slide>
+
+## 🔁 Repeat as needed
+
+Often it's useful to iterate on smaller sets of experiments to reach a goal in the longer term
+
+</Slide>
+<Slide>
+
+## "Freyja, why are you telling us this?"
+
+💬 An imaginary audience member for dramatic effect, 2024
+
+</Slide>
+<Slide>
+
+## Because this is secretly about understanding the needs of people!  🤸🏻
+
+</Slide>
+<Slide>
+
+## Well... it's really about understanding systems in general... 📈
+
+but people most importantly! 🤸🏻
+
+</Slide>
+<Slide>
+
+## "You don't have to be an engineer to be a racing driver, but you do have to have *Mechanical Sympathy*."
+
+💬 Jackie Stewart, according to [Martin Thompson's GOTO Aarhaus 2012 talk on the concept](https://www.youtube.com/watch?v=MC1EKLQ2Wmg)
+
+</Slide>
+<Slide>
+
+## What is Mechanical Sympathy? 🦾
+
+A philosophy of understanding how a system works to get the most out of the system's utility
+
+</Slide>
+<Slide>
+
+## Why is Mechanical Sympathy useful in software? 🖥️
+
+* It gives you an understanding on where more complex issues may be
+* It gives you focus on where to improve if required to
+* It provides a mechanism through which an architecture can scale to *everybody's* needs.
+
+</Slide>
+<Slide>
+
+## The Scientific Method helps with obtaining Mechanical Sympathy!
+
+</Slide>
+<Slide>
+
+## It helps the Developer Experience
+
+* Debug software more effectively by experimenting with different conditions
+* Projects can make better scheduling decisions with a consistent framing
+* Less change of feeling overwhelmed by a large task
+
+</Slide>
+<Slide>
+
+## It helps the User Experience
+
+* Systems of the future will need to come to where the user is.
+* User feedback can be an input into the process of what to do next
+* Performance engineering can become an effective part of the accessibility equation
+
+</Slide>
+<Slide>
+
+## Aside: Evaluate your device testing as part of this
+
+* Example: 75th percentiles ⏲️
+  * Mobile: Samsung A51 (or a Galaxy S7/8 - ish)
+  * Desktop: 2 core 4 thread Skylake/Bulldozer, spinning HDDs!
+
+[Source: The Performance Inequality Gap, 2024](https://infrequently.org/2024/01/performance-inequality-gap-2024/)
+
+</Slide>
+<Slide>
+
+## 💡Takeaway I: The most important time to save in *any* process or system is *people's* time
+
+* This factors into UX, DX, processes around sprints, project delays, the works.
+* There is no free lunch
+* If you're slow/complicated/inaccessible, users will go elsewhere (or build it themselves)
+
+</Slide>
+<Slide>
+
+## So... why not *"Biological Sympathy"* as well? 💪🏼
+
+* People are just as much a part of these systems as the tech we're building
+* Effective products are effective *because* they understand the needs of the people involved
+
+</Slide>
+<Slide>
+
+## The Scientific method makes development more *sustainable*
+
+* Small, frequent experiments helps with scheduling tasks effectively
+* Updating has the potential to be *proactive* instead of *reactive*
+* A problem can *almost always* be broken down to be smaller smaller
+* Easier for someone to be onboarded into a project quickly and effectively.
+
+</Slide>
+<Slide>
+
+## Relevant Case Study: CVE-2024-3094 - `xz-utils`
+
+* `xz-utils` was targeted via social engineering because it is a core project of Linux deployments maintained by one person.
+* This led to a vulnerability being constructed on a specifically patched version of OpenSSH used by Debian/Red Hat distros.
+* Fundamentally, the initial step is a *process* vulnerability.
+
+</Slide>
+<Slide>
+
+## This is not the first time this has happened
+
+* I don't have time to go into more details
+  * [Sam James (`meson` maintainer) has a good summary if you want more information](https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27)
+* Heartbleed, in particular, did get short-term funding, but it didn't last.
+* Long term solutions are needed, and they have to involve everyone as a community
+
+</Slide>
+<Slide>
+
+## My Opinion: The industry's most pressing question is...
+
+</Slide>
+<Slide>
+
+## 💡Takeaway II: "What can we do to make development practices more rigorous *and sustainable*?"
+
+* Hint: I think a collective culture of learning from our past mistakes sounds pretty sciency!
+
+</Slide>
+<Slide>
+
+## Answering questions on sustainable systems development is hard
+
+* How do you get C-Level execs on board with this philosophy in the long term?
+* Where could the industry improve?
+* Who's being let down?
+
+</Slide>
+<Slide>
+
+## A few partial answers/suggestions
+
+* Consider supporting maintainers of projects you depend on
+* Internal Developers: If they look to be burned out, do they need a judgement-free space (sabbaticals - ideally paid!) to recover?
+* Are your clients/marketing contributing to crunch due to indecision or otherwise?
+* Is your user feedback sufficient enough for you to be confident you're going in the right direction?
+
+</Slide>
+<Slide>
+
+## Social engineering issues need to be solved in the long-term
+
+* We already have security teams looking at the technical stuff
+* This is a financial and mental health support problem, fundamentally
+* I've used this structure of problems to improve my own mental health regarding my work
+* A scaled up, industry-wide approach could work well.
+
+</Slide>
+<Slide>
+
+## Symptoms/Vulnerability precursors
+
+* Maintainer burnout - it sucks, it's all too common, and I have a huge amount of respect for Lasse Collin.
+* Processes where companies pressuring individuals being the norm
+* The industry turning a blind eye to the funding gap between salaried employees and full-time FOSS devs.
+
+</Slide>
+<Slide>
+
+## Hypothesis: Lack of support led to the trust of a malicious actor
+
+* Evidence: Attacker has been contributing and actively helping since 2021...
+* No other financial or personnel support
+* Maintainer is potentially vulnerable to parties attacking their mental health
+
+</Slide>
+<Slide>
+
+## Collective Experiment proposal: Support the libraries you use
+
+* Ask them how you can help contribute, especially if they're a small team
+* Target your donations based on that team's needs
+* If something is high priority to fix, pay them adequately and don't crunch them.
+
+</Slide>
+<Slide>
+
+## Aside: Employment
+
+* Might seem simple, but
+  * Can backfire if the dev in question is prevented from working on the project during company time
+  * Often better to try and make a regular donation so they can go part time versus other work.
+
+</Slide>
+<Slide>
+
+## Culture experiment: Evaluate your self-development culture
+
+* Web Designers: Learn some HTML/CSS!
+* Devs: Evaluate yourself against the next level's job spec.
+* Project managers: Consider attending user feedback sessions
+* Dev Leads: Consider how to delegate the role of Engineering Project Manager
+
+</Slide>
+<Slide>
+
+## Everyone: Think like a scientist - Take notes
+
+* I use Obsidian
+  * Great Markdown features
+  * Free for personal use
+* Other methods might work also (hand written notes in particular)
+* The more knowledge obtained, the more society benefits
+
+</Slide>
+<Slide>
+
+## 💡Takeaway III: The best teams learn from one another, other teams, as a well as their users
+
+</Slide>
+<Slide>
+
+## In short: The Scientific Method is a tool and philosophy that helps people think about their processes on a daily basis...
+
+</Slide>
+<Slide>
+
+## It helps with learning new things, and forming new ideas...
+
+</Slide>
+<Slide>
+
+## It serves me well, and I hope it serves you all well too!
+
+</Slide>
+<Slide>
+
+## I'm looking forward to your own conclusions - keep me posted of your progress
+
+Misskey/Mastodon: [@freyja@gensoukyou.jp.net](https://gensoukyou.jp.net/@freyja)
+Blog: [https://freyjadomville.co.uk](https://freyjadomville.co.uk) (working on comments being linked to my Misskey)
+
+</Slide>
+<Slide>
+
+## Thanks for listening! 👋🏼
+
+* YouTube version is coming soon! 
+* Link to the [blog post](https://freyjadomville.co.uk/blog/the-unreasonable-effectiveness-of-the-scientific-method/) or subscribe to my Misskey for slides
+
+</Slide>
