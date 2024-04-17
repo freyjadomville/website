@@ -9,7 +9,7 @@ const { centered } = Astro.props;
 <section
   data-presentation-slide
   class:list={[centered && "justify-center", centered && "align-center"]}
-  class="mt-20 border-solid border border-[--black] p-20"
+  class="mt-20 [#presentation-content>&]:mt-2 h-[80vh] border-solid border border-[--black] p-20"
 >
   <slot />
 </section>
