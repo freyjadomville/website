@@ -1,0 +1,53 @@
+---
+title: 'An "Advent" of Computer Chess'
+description: 'In which Freyja gets nerd-sniped'
+pubDate: 'Nov 27 2024'
+---
+
+# THIS IS UNPUBLISHED - Please don't share any links to this yourself, as the content is likely ot change
+
+## Prologue: In which Freyja is nerd-sniped:
+
+To provide some context: In [this Misskey post](https://fieldprogrammable.gay/notes/9zwbx7c7lhc5009j), I am the other person referenced by my good friend, Lofty.
+
+In short, they've convinced me to write a chess AI, in Rust, as they need to have something to play against. First, some ground rules:
+
+* I get the 31 days in December before the challenge is up.
+* If possible, blogs are daily, even if I spent an evening on research versus actually getting any code written.
+* At the end of the 31 days, I either have to declare defeat, or have it play against Lofty's bot at some point in the new year.
+
+## But why chess? And why December?
+
+Well... I don't like my experiences with Advent of Code. It doesn't work for the way I'm wired, and trying to learn something cool like a chess bot gives me enough in the theory side to work out where Rust's strengths and weaknesses are. The attention span and relentlessness just seems to make me burn out, and really stressed/unhappy, when I want to find interesting problems and solve them, at a slower pace, in my own time.
+
+A chess-bot's one of those "delve as much as you want in to it" projects, that'll hopefully mean I achieve my goal of feeling proficient in Rust with *something*. It's not my first go at that, and I've honestly felt I've been OK with lifetimes/borrowing, but at the same time my code hasn't been all that complex? I want to experience the reality of where the borrow checker fails, where I might be missing out on things, and honestly I want something that's also tractable and can be broken down into tasks. Plus it'd be cool to embed the WASM version of the bot in my site so humans can play against a bot I built.
+
+I therefore *hope* that the introduction of a 30 day "challenge" or "jam" is a better format for me, and it means I can use the time I'm likely to have as annual leave on this, finishing stuff off, improving things, and making stuff go fast. Plus, it gives me a jumping off point for a future talk/video, and gives me something cool to talk about in nerdy circles. I hope you'll stick around for the ride!
+
+## What's the plan?
+
+Lofty's proposed the following for the first week. 
+
+* Board structure
+* FEN parser
+* Is a square attacked
+* Move generation
+* Divide Perft debugging
+
+I'm not gonna plan out any more than that, as life and medical conditions might get in the way of this, but it gives me something small and tractable. It means I can start by looking into data layout, theory, and other bits, like features of Rust I've not yet played with. The first proper post will be a lot of "covering the process on this in more detail", giving myself background and theory to play with, and I'll probably have a weekly "Code Review" post outlining some of the feedback people have given me.
+
+If there are any ideas after that, I'll take them into account once I'm at the stage of planning again. I don't imagine I'll necessarily stop working on this project right away if it works out, and it's something I can see myself falling back into reinforcement learning or some other crazy scheme to make things work out, using more adaptive heuristics, so it (theoretically) gets stronger the more it plays.
+
+That does mean I'll be upfront, it will likely log and record game data and send me an email when you play, but that'll mostly be used for analytics of the bot itself (and the source will be available for you to make a reproducible build from for the WASM blob). I'm not planning on capturing anything user identifying, and I'm sure as *hell* not wanting to make myself liable under the GDPR!
+
+## My current experience with Rust
+
+As I've said, I've written a few small toy examples, but I've never really sunk my teeth into anything solid. My style is fairly "don't change state unless you have to", so I *should* be on the right side of the borrow checker, most of the time, but at the same time, I know there's so much more I could learn, and I just find what little I have written to be very cosy and thankfully not so garbage-collector heavy (I write C# and TypeScript professionally). The data layout stuff will be new, and honestly it's part of the challenge. Chess bots need to be *fast*, after all.
+
+## That's it (I'll update the post if I think of anything else, this is just an intro)!
+
+As is convention with any typical blog series, I'll update the links in here as I go (possibly as a side quest I'll make Astro generate it automatically at the bottom of these blog posts for me if I get frustrated with my own [yak shaving](https://bsky.app/profile/freyjadomville.co.uk/post/3lbowtud3ok2s), but it depends on when I'll be peeved by the automation task)!
+
+Happy holidays!
+
+F.
